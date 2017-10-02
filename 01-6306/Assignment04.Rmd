@@ -1,0 +1,69 @@
+---
+title: "Assignment04"
+author: "William Gonzalez"
+date: "October 1, 2017"
+output: html_document
+---
+
+```{r setup2, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Q1: FiveThirtyEight Data
+
+### 1a:
+```
+#install.packages("fivethirtyeight"library(fivethirtyeight)
+library("fivethirtyeight")
+```
+
+### 1b:
+```
+pack<-data(package = "fivethirtyeight")
+pack$results[18,]
+pack$results[18,"Item"]
+df<-college_recent_grads
+```
+
+### 1c: 
+```
+vignette("fivethirtyeight", package = "fivethirtyeight")
+```
+#### The URL is: http://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/
+
+### 1d: 
+```
+dim(df)
+str(df)
+```
+
+## Q2: Data Summary
+
+### 2a:
+```
+colnames(df)
+ncol(df)
+```
+
+### 2b:
+```
+library(plyr)
+major_count<-count(df$major_category)
+major_count
+```
+
+### 2c:
+```
+par(las=1)
+par(mar=c(5,15,5,5))
+barplot(major_count$freq, main="Count of Recenty Graduated Majors", horiz=TRUE, xlab="Count", names.arg=major_count$x, col="yellow",xlim=c(0,35))
+```
+
+### 2d:
+```
+write.csv(df, file="college_grads.csv", row.names=FALSE)
+```
+
+## Q3: Codebook (Github Repo)
+
+## Q4: swirl modules: output on a separate file  
