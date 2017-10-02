@@ -65,5 +65,6 @@ write.csv(df, file="college_grads.csv", row.names=FALSE)
 ```
 
 ## Q3: Codebook (Github Repo)
+https://github.com/Willie-G/SMU_MSDS_Homework/tree/master/01-6306 
 
 ## Q4: swirl modules: output on a separate file  
