@@ -30,4 +30,4 @@ Top-10-Girl-Names.csv - this is the resulting output file after making changes. 
 * Total
 
 There are only 10 rows representing the top 10 most-popular names for babies.
-You can see a full description of all the tasks performed by navigating to [README.html](./README.html)
+You can see a full description of all the tasks performed by navigating to [README.Rmd](./README.Rmd)
